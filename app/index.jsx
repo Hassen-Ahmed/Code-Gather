@@ -13,8 +13,8 @@ const height = Dimensions.get("window").height;
 
 export default function Page() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View>
+    <SafeAreaView style={styles.safeStyle}>
+      <View style={styles.container}>
         <LinearGradient
           colors={["#3c8eba", "#a62126"]}
           style={styles.background}
@@ -105,5 +105,8 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     height: height,
+  },
+  safeStyle: {
+    backgroundColor: "black",
   },
 });
